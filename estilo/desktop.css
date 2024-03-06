@@ -228,7 +228,7 @@ main {
     width: 100%;
     height: 50vh;
 
-    background-image: url(/images/turma.png);
+    background-image: url(../images/turma.png);
     background-repeat: no-repeat;
     background-size: cover;
 

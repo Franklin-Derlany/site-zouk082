@@ -25,7 +25,7 @@
     }
 
     .primeiro-painel {
-        background-image: url(/images/flyer.png);
+        background-image: url(../images/flyer.png);
         background-repeat: no-repeat;
         background-size: cover;
     
