@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(8, 8, 8);
+}
+
+
+/* CABECALHO */
+.navbar {
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 9;
+
+    background-color: #000;
+    border-bottom: 2px solid #000;
+    box-shadow: 2px 2px 2px #0000006b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: flex;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.menu a {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 13px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.menu a:hover{
+    color: #D43327;
+}
+
+
+/* PRIMEIRA SESSÃO */
+main {
+    padding: 0px 12% 0px 12%;
+}
+
+.primeira-sessao {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.container-home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primeiro-painel {
+    padding-right: 15%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.primeiro-painel h1 {
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 30px;
+
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.primeiro-painel p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #fff;
+}
+
+.primeiro-painel .botao {
+    max-width: 170px;
+
+    background-color: #D43327;
+    color: #fff;
+
+    font-family: 'Oswald';
+    text-align: center;
+
+    border-radius: 2px;
+    padding: 10px 18px;
+    transition: all 0.3s linear;
+}
+
+.primeiro-painel .botao:hover {
+    background-color: #fff;
+    color: #D43327;
+    transform: scale(1.1);
+}
+
+.segundo-painel img {
+    width: 450px;
+}
+
+
+/* SEGUNDA SESSÃO */
+.segunda-sessao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.segunda-sessao h2 {
+
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 30px;
+    
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #ffff;
+
+    margin-bottom: 30px;
+}
+
+.container-sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.img-container {
+    background:#D43327;
+    width: 300px;
+    height: 300px;
+    transition: all 0.3s linear;
+}
+
+.img-container:hover{
+    transform: scale(1.1);
+}
+
+.img-container span {
+    position: relative;
+    bottom: 35px;
+    left: 10px;
+
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 0.5s linear;
+    opacity: 0.5;
+}
+
+.img:hover{
+    opacity: 1;
+    transform: scale(1)
+}
+
+
+/* TERCEIRA SESSÃO */
+.terceira-sessao {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-aulas {
+    width: 100%;
+    height: 50vh;
+
+    background-image: url(/images/turma.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    isolation: isolate;
+}
+
+.container-aulas::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(15px);
+    background-color: #0000007b;
+}
+
+.descricao-aulas {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 5%; 
+}
+
+.sub-container-aulas {
+    width: 50%;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    padding: 2% 0;
+}
+
+.sub-container-aulas h1 {
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 30px;
+
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.sub-container-aulas p {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 16px;
+    color: #fff;
+}
+
+.sub-container-aulas a {
+    max-width: 170px;
+
+    background-color: #D43327;
+    color: #fff;
+
+    font-family: 'Oswald';
+    text-align: center;
+
+    border-radius: 2px;
+    padding: 10px 18px;
+    transition: all 0.3s linear;
+}
+
+.sub-container-aulas a:hover {
+    background-color: #fff;
+    color: #D43327;
+    transform: scale(1.1);
+}
+
+.container-img-aulas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img-aulas img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* QUARTA SESSÃO */
+
+.quarta-sessao a {
+    color: #D43327;
+}
+
+.painel-footer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    font-family: "Montserrat";
+
+    width: 100%;
+    height: 80vh;
+}
+
+.institucional {
+    width: 40%;
+    height: 30vh;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.institucional img {
+    width: 80px;
+    padding-top: 5px;
+}
+
+.institucional-text p {
+    margin-top: 10px;
+}
+
+.sub-painel-footer {
+    display: flex;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 30vh;
+}
+
+.central-ajuda h1 {
+    margin-bottom: 20px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato h1 {
+    margin-bottom: 20px;
+}
+
+.contato a {
+    margin-bottom: 10px;
+}
+
+.nav-footer {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 14px;
+
+    display: flex;
+    justify-content: space-between;   
+
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.nav-footer .link-footer a{
+    padding-left: 15px;
+}
